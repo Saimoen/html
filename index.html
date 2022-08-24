@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cours</title>
+
+    <link rel="shortcut icon" href="html-logo.png">
+
+</head>
+
+<body>
+    <section>
+        <div>
+            <h1>Texte -- Ecrire avec HTML</h1>
+            <p>Pour écrire un texte basique il faut la balise "p"</p>
+            <em>Pour un texte en italique, il faut la balise "em"</em> <br>
+            <strong>Et pour un texte en gras, il faut la balise "strong"</strong><br>
+            <span>L'élément en "span" ne revient pas à la ligne</span>
+        </div>
+        <div>
+            <h2>Photos -- Mettre des photos avec HTML</h2>
+            <p>Pour insérer des images il faut la balise "img src="</p>
+            <img src="Gregory.png" height="300" alt="logo-gregory">
+            <p>On peut changer la largeur grâce à la balise "height" à placer dedans "img"</p>
+        </div>
+        <div>
+            <h3>Listes -- Lister avec HTML</h3>
+            <p>Pour faire des listes il existe 2 balises tels que: "ol" et "ul"</p>
+            <p>"ol" permet de faire des listes classiques:</p>
+            <ul>
+                <li>Maîtriser HTML</li>
+                <li>Apprendre CSS</li>
+                <li>Découvrir Javascript</li>
+            </ul>
+            <p>"ul" permet de faire des listes numérotées:</p>
+            <ol>
+                <li>Maîtriser HTML</li>
+                <li>Apprendre CSS</li>
+                <li>Découvrir Javascript</li>
+            </ol>
+        </div>
+        <div>
+            <h4>Tableaux -- Faire des tableaux avec HTML</h4>
+            <p>Pour faire des tableaux, il faut utiliser la balise "table"</p>
+            <table border="1" width="50%">
+                <caption>Populations d'Europe</caption>
+                <thead>
+                    <tr>
+                        <th>Pays</th>
+                        <th>Populations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>France</td>
+                        <td>66M</td>
+                    </tr>
+                    <tr>
+                        <td>Allemagne</td>
+                        <td>82M</td>
+                    </tr>
+                    <tr>
+                        <td>Espagne</td>
+                        <td>47M</td>
+                    </tr>
+                </tbody>
+            <p>La balise "caption" permet de mettre un titre au tableau, 
+                pour remplir l'en-tête du tableau la balise "thead" est utilisée,
+                le "tbody" permet de remplir le tableau,
+                comme pour les listes "ol" = "tr" et "li" = "td" </p>
+            </table>
+        </div>
+        <div>
+            <h5>Liens -- Mettre des liens avec HTML</h5>
+            <p>La balise pour mettre des liens est "a href="></p>
+            <a href="https://htmlcheatsheet.com/">HTML Cheat Sheet</a>
+
+            <p>Pour ouvrir le lien vers une nouvelle fenêtre il suffit
+                de rajouter la balise "target=_blank"
+            </p>
+
+            <a href="https://htmlcheatsheet.com/" target="_blank">HTML Cheat Sheet</a>
+
+
+
+
+
+            <h6>Vidéo -- Uploader une vidéo avec HTML</h6>
+            <p>Pour uploader une vidéo,
+                il faut utiliser la balise "video src="
+                Pour changer la largeur c'est comme les images.
+            </p>
+            <video src="video.mp4" height="150" autoplay loop muted></video>
+        </div>
+    </section>
+    <section>
+        <h2>Formulaires</h2>
+        <form action=""/action.php" method="post">
+            <p>Pour créer un formulaire il faut utiliser la balise "label", <br>
+                pour créer une zone de texte il faut utiliser la balise "input"<br> 
+                pour écrire dans ce formulaire il faut utiliser les balises "placeholder"</p>
+
+        <label for="name">Nom:</label><input type="text" id="name" placeholder="Entrez votre nom"> <br>
+
+        <p>Associer le "min", le "max", le "step" permet de créer un formulaire 'défilant' pour les nombres </p><br>
+        <label for="age">Age:</label><input type="number" id="age" min="0" max="99" step="1" value="18"> <br>
+        
+                <p>Pour créer un formulaire à choix, il faut utiliser la balise "option", utiliser l'"id" du "label" pour que ça corresponde</p>
+        <label for="gender">Genre</label>
+        <select id="gender" >
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+        </select> <br>
+
+        <p>CHECKBOX</p>
+        <div>
+            <input type="radio" name="type" id="human">
+            <label for="human">Humain</label>
+
+            <input type="radio" name="type" id="dog">
+            <label for="dog">Chien</label>
+
+            <input type="radio" name="type" id="cat">
+            <label for="cat">Chat</label>
+        </div>
+
+        <P>Zone de texte</P>
+        <textarea cols="30" rows="10" placeholder="Entrez votre texte"></textarea> <br>
+
+        <div>
+            <label><input type="checkbox"> Accepter les CGU
+            </label>
+        </div>
+
+        <section>
+            <h2>Mail -- Contacter par Mail</h2>
+            <p>Mettre un lien pour envoyer un mail</p>
+            <a href="mailto:greg.saimoen.12@gmail.com">Ecrivez-moi !</a> <br>
+            <p>Mettre un lien pour télécharger un fichier</p>
+            <a href="Gregory.png" download="nom-du-fichier">Télécharger</a>
+        </section>
+    </form>
+    </section>
+
+
+    
+    
+</body>
+</html>
